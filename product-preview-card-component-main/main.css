@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+main {
+  display: flex;
+  margin: 50px;
+  flex-direction: row;
+  border-radius: 10%;
+  height: 450px;
+  width: 600px;
+}
+.container {
+  display: block;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 00px 00px 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-color: white;
+  width: 50%;
+  text-align: left;
+  padding: 25px;
+  border-radius: 0px 10px 10px 0px;
+}
+.mobile {
+  display: none;
+}
+.perfume {
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+}
+.title {
+  padding: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.description {
+  line-height: 25px;
+  word-spacing: 2px;
+  padding: 10px 0px;
+  color: hsl(228, 12%, 48%);
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+.discount-price {
+  font-size: 34px;
+  font-weight: bold;
+  color: #3d8168;
+  padding: 10px 0px;
+  display: inline-block;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+}
+.main-price {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #6b6a70;
+  margin-left: 15px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.prices {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+}
+.shop {
+  display: block;
+  align-items: center;
+  width: 100%;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #e7fffd;
+  background-color: #3d8168;
+  border-radius: 10px;
+  border: 1px solid #3d8168;
+  width: 100%;
+  height: 50px;
+}
+svg {
+  margin-right: 10px;
+}
+
+.btn:active {
+  cursor: pointer;
+  background-color: darkgreen;
+  outline: darkgreen;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 400px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .card {
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+  }
+  img {
+    border-radius: 10px 10px 00px 0px;
+  }
+  .btn {
+    width: 100%;
+  }
+}
